@@ -1,0 +1,26 @@
+/*-----------------------------------------------------------------------
+name : Seungmin Yun
+student No. :010820132
+section: IPC144SJJ
+----------------------------------------------------------------------*/
+1.	What is a namespace? Explain its purpose.
+
+A namespace is the special name we make like a struct that includes modules and declarations.
+We use the namespace because it is a method to prevent name conflicts in the code. It is separating modules and declarartions even if there is same variable names inside another namespace.
+
+2.	Why are header files needed? Explain.
+
+Because of cohesion. Without using a header file, we cannot modify and read easily when we code a large project. The code will be messy and confused.
+
+3.	In the instructions above, you were directed to compile only .cpp files but not the .h files. Explain why you should never compile header files.
+
+We do not compile header files alone because header files are included in .cpp files. In the header files, there are declarations and prototypes to use. Therfore, actually we cannot compile header files. There is no implementaion.
+
+4.	Explain why you should never include .cpp files in another file.
+
+In order to prevent duplication of the code, we never include .cpp files in another file. There are lots of implementations in .cpp files that modules are compiled separately. If we include duplication of implementations, the compiler shows us to redefine the variables.
+
+5.	Explain in your own words what have you learned on this workshop.
+
+I learned how to organize source code into header and implementation files and i also learned the different usage of a header and a implementation file.
+Lastly, I learned why we have to use header guard.
